@@ -66,21 +66,21 @@ Route::get('docs/dev', function()
 {
 	Cookie::queue('docs_version', 'master', 525600);
 
-	return Redirect::back();
+	return Redirect::intended('docs');
 });
 
 Route::get('docs/4-0', function()
 {
 	Cookie::queue('docs_version', '4.0', 525600);
 
-	return Redirect::back();
+	return Redirect::intended('docs');
 });
 
 Route::get('docs/4-1', function()
 {
 	Cookie::queue('docs_version', '4.1', 525600);
 
-	return Redirect::back();
+	return Redirect::intended('docs');
 });
 
 /**
